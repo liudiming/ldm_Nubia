@@ -1,0 +1,84 @@
+@charset "utf-8";
+#phone{
+    min-height: 660px;
+}
+
+.main_content{
+    margin: 0 auto;
+    width: 1200px;
+}
+#nav2{
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 70px;
+    font-size: 14px;
+}
+
+.main_content>div.na1>a {
+    font-weight: 500;
+    color: #333;
+}
+.main_content>div.nav1>a:last-child {
+    cursor: default;
+    color: #999;
+}
+.main_left {
+    position: relative;
+    float: left;
+    width: 50%;
+    /* height: 730px; */
+    text-align: center;
+}
+.main_left #imgSrc {
+    margin-top: -60px;
+    min-width: 360px;
+}
+
+.main_left .mian_left_thumb {
+    position: relative;
+}
+.mian_left_thumb li {
+    display: inline-block;
+    margin-left: 10px;
+    width: 86px;
+    height: 86px;
+    /* border: 1px solid #ccc; */
+}
+.mian_left_thumb li.selected {
+    border: 1px solid #de634f;
+}
+.mian_left_thumb li img {
+    margin-top: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.main_left .share-pc {
+    text-align: left;
+    padding-left: 110px;
+    margin-top: 20px;
+}
+.main_left .share-pc > span {
+    margin-right: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.share_png1, .share_png2, .share_png3 {
+    width: 20px;
+    height: 20px;
+}
+.main_left .share-pc > span > i {
+    font-size: 18px;
+    position: relative;
+    top: -2px;
+    color: #de634f;
+}
+
+.main_right {
+    float: right;
+    margin-bottom: 20px;
+    width: 50%;
+}
