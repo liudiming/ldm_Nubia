@@ -1,4 +1,7 @@
 @charset "utf-8";
+i{
+    font-style: normal;
+}
 #phone{
     min-height: 660px;
 }
@@ -81,4 +84,246 @@
     float: right;
     margin-bottom: 20px;
     width: 50%;
+}
+.main_right_p>span {
+    font-weight: 500;
+    font-size: 24px;
+    color: #333;
+}
+
+.sellPoint {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.productActivity {
+    display: inline-block;
+    width: 100%;
+}
+.price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.rightLabel {
+    width: 15%;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 7px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.price .PriceContent {
+    width: 85%;
+    display: inline-block;
+}
+
+.price .PriceContent >span:nth-child(1) {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.priceIcon {
+    font-size: 14px;
+    margin-top: 4px;
+    font-style: normal;
+}
+
+.promo-sell {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.promo-info {
+    width: 85%;
+    display: inline-block;
+}
+
+.promo-info p {
+    width: 100%;
+    margin-bottom: 7px;
+    color: rgb(53, 53, 53);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wrap-txt {
+    margin-right: 0.85rem;
+    color: #de634f;
+    padding: 0rem 1rem;
+    border: 1px solid #de634f;
+    background: white;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.promo-info p span {
+    display: inline-block;
+    width: 75%;
+    font-size: 14px;
+    color: rgb(30, 30, 30);
+}
+
+.addressMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 20px 30px 0;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+
+
+.address {
+    width: 80%;
+    padding-left: 30px;
+    margin-top: 0;
+    color: #000;
+    position: relative;
+}
+
+.address > p > img {
+    position: absolute;
+    width: 14px;
+    left: 10px;
+    top: 2px;
+}
+
+.address > p > span {
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+span.address_content {
+    width: 490px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.expressprefix {
+    color: #de634f;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.expresstime {
+    color: #666;
+}
+
+.change {
+    width: 6%;
+    color: #de634f;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+}
+/* 商品选项按钮 */
+.productOptions {
+    width: 100%;
+    padding: 30px 20px 0 0;
+}
+
+.phone_net {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rightLabel2 {
+    width: 15%;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.phone_net .clearfix_jj {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.phone_net .clearfix_jj li {
+    box-sizing: border-box;
+    padding: 12px 0px;
+    width: 31%;
+    margin-right: 10px;
+    border: 1px solid rgb(224,224,224);
+    color: rgb(100,100,100);
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+
+
+.phone_net .clearfix_jj .cur {
+    border: 1px #de634f solid;
+    color: #333;
+}
+.phone_net {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.phone_net .clearfix_jj li:not(.cur):hover {
+    border: 1px solid #666;
+}
+.selectPackage li:not(.cur):hover {
+    border: 1px #666 solid;
+}
+#selectPackage {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.selectPackage li {
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-right: 10px;
+    border: 1px solid rgb(224,224,224);
+    color: rgb(100,100,100);
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+.selectPackage li p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.main_right .cur {
+    border: 1px #de634f solid;
+    color: #333;
 }
