@@ -383,14 +383,121 @@
                         购物车
                         <b></b>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        确认订单
+                        <b></b>
+                    </li>
+                    <li>
+                        支付订单
+                        <b></b>
+                    </li>
+                    <li>
+                        完成支付
+                        <b></b>
+                    </li>
                 </ul>
+            </div>
+            <div class="container">
+                <div class="cart-con">
+                    <div class="cart-h1">商品清单</div>
+                    <table cellspacing="0" cellpading="0" border="0" class="cart-thead table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th width="20%"></th>
+                                <th width="33%"></th>
+                                <th width="11%"></th>
+                                <th width="16%"></th>
+                                <th width="12%"></th>
+                                <th width="6%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="productImage">
+                                    <img src="https://oss.static.nubia.cn/active/5ea30ec20b13056.png" alt="">
+                                </td>
+                                <td class="productname">
+                                    <a href="" class="pdt-title">nubia Play 双模5G( 8GB+128GB 5彩斑斓黑)</a>
+                                </td>
+                                <td class="productPrice"> ￥2699</td>
+                                <td>
+                                    <div class="btn-cnts">
+                                        <span class="table-cut">-</span>
+                                        <input type="text" value="1" class="num cart-cnt" maxlength="2" readonly="readonly">
+                                        <span class="table-add">+</span>
+                                    </div>
+                                </td>
+                                <td class="sum" style="line-height: 1.8;">
+                                    ￥2699
+                                </td>
+                                <td>
+                                    <a title="删除" href="" class="cart-close close">x</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="productImage">
+                                    <img src="https://oss.static.nubia.cn/active/5ea30ec20b13056.png" alt="">
+                                </td>
+                                <td class="productname">
+                                    <a href="" class="pdt-title">nubia Play 双模5G( 8GB+128GB 5彩斑斓黑)</a>
+                                </td>
+                                <td class="productPrice"> ￥2699</td>
+                                <td>
+                                    <div class="btn-cnts">
+                                        <span class="table-cut">-</span>
+                                        <input type="text" value="1" class="num cart-cnt" maxlength="2" readonly="readonly">
+                                        <span class="table-add">+</span>
+                                    </div>
+                                </td>
+                                <td class="sum" style="line-height: 1.8;">
+                                    ￥2699
+                                </td>
+                                <td>
+                                    <a title="删除" href="" class="cart-close close">x</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6" style="height: 90px; text-align: left; border: 0px !important;">
+                                    <div class="subLeft" style="color: rgb(150, 150, 150); font-size: 16px; float: none; font-weight: 400; margin-bottom: 10px;">
+                                        已选择
+                                        <span style="color: rgb(50, 50, 50);">2</span>
+                                        件商品
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="subInfo">
+                        <div class="subRight">
+                            <div class="subGroup">
+                                <div>
+                                    <p>
+                                        <span>合计（不含运费）</span>
+                                        <span class="total">
+                                            <b>¥</b>
+                                            5847.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-cart-groups">
+                                <form action="" id="orderCheck">
+                                    <div class="btn-cart-groups-inner">
+                                        <a href="" class="pay-continue">继续购物</a>
+                                        <a class="go-pay">去结算</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script src="../lib/jquery.js"></script>
 <script src="../js/index.js"></script>
+<script src="../js/cart.js"></script>
 </html>
