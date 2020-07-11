@@ -188,7 +188,44 @@ $(".pinbao").children().on("click",function(){
 })
 
 $(".addShopCar").on("click",function(){
-    console.log($(".cur").text())
-    var str = $(".cur").text().replace(/\W/g,"")
-    console.log(str)
+    // console.log($(".cur").text())
+    // var str = $(".cur").text().replace(/\W/g,"")
+    // console.log(str)
+    var id = 10001
+    var name = $(".shoujiming1").text()
+    var img = $("#imgSrc").attr('src')
+    var price = $(".jiage").text()
+    // console.log(name,img,price)
+    // $.get("../php/addwq.php",{
+    //     id:id,
+    //     name:name,
+    //     img:img,
+    //     price:price
+    // },function(data){
+    //     console.log(data)
+    //     if(data.code === 1){
+    //         alert("加入购物车成功")
+    //     }
+    // })
+    $.ajax({
+        url:"../php/addwq.php",
+        success:function(data){
+            // console.log(data)
+            if(data.code == 1){
+                alert("加入购物车成功！")
+            }
+        },
+        dataType:"json",
+        data:{
+            id:id,
+            name:name,
+            img:img,
+            price:price
+        }
+    })
+
+
+
+
+
 })
