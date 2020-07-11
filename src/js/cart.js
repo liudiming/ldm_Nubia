@@ -33,15 +33,14 @@ $.ajax({
                                     <span class="table-add${value.product_id}">+</span>
                                 </div>
                             </td>
-                            <td class="sum" style="line-height: 1.8;">
-                                ￥${sum}
-                            </td>
+                            <td class="sum" style="line-height: 1.8;">￥${sum}</td>
                             <td>
                                 <a title="删除" class="cart-close close${value.product_id}">x</a>
                             </td>
                         </tr>`
 
                 $("tbody").append(str)
+                
                 $(`.table-add${value.product_id}`).on("click",function(){
                     var id = $(this)[0].className.slice(9)
                     $.ajax({
@@ -86,26 +85,21 @@ $.ajax({
 
                 })
         })
+        // console.log($(".sum").text().split("￥"))
+        var arr = $(".sum").text().split("￥")
+        console.log(arr)
+        var sum1 = 0
+        $.each(arr,function(index,value){
+            value = value * 1
+            sum1 += value
+        })
+        var strr = `<b>¥</b>
+                    ${sum1}`
+        $(".total").empty()
+        $(".total").append(strr)
     },
     dataType:"json"
 })
-
-
-
-
-$(".table-cut").on("click",function(){
-    // console.log($(".num").val())
-    var num = parseInt($(".num").val())
-    $(".num").val(num-1)
-    if($(".num").val()<1){
-        alert("确定不购买这个商品了嘛？")
-    }
-    var num1 = parseInt($(".num").val())
-    var price1 = parseInt($('.productPrice').text().slice(2,6))
-    var sum = num1 * price1
-    $(".sum").text("￥"+sum)
-})
-
 
 
 

@@ -191,7 +191,7 @@ $(".addShopCar").on("click",function(){
     // console.log($(".cur").text())
     // var str = $(".cur").text().replace(/\W/g,"")
     // console.log(str)
-    var id = 10001
+    var id = 10003
     var name = $(".shoujiming1").text()
     var img = $("#imgSrc").attr('src')
     var price = $(".jiage").text()
